@@ -1,0 +1,6 @@
+public class ImageSize {
+    private static final int LDPI_SIZE = 24;
+    private static final int MDPI_SIZE = 32;
+    private static final int HDPI_SIZE = 48;
+    private static final int XHDPI_SIZE = 64;
+}   
