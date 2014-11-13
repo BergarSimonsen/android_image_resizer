@@ -14,9 +14,22 @@ public class ImageResizer {
 	this.filename = imageName;
 	this.image = Reader.readImage(filename);
 	this.imageType = image.getType() == 0 ? BufferedImage.TYPE_INT_ARGB : image.getType();
-	// Get extension
+	this.extension = getExtension(filename);
+    }
 
+    public static void main(String args[]) {
+	if(args.length == 0) {
+	    System.out.println("Usage: <prog> [params] [image name]");
+	    System.exit(0);
+	} else {
+	    
+	}
+    }
 
-
+    private String getExtension(String filename) {
+	String file = "";
+	if(filename.contains("/")) file = filename.substring(filename.lastIndexOf("/"));
+	else file = filename;
+	return file.substring(file.indexOf("."));
     }
 }
