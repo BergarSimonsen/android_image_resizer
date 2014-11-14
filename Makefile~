@@ -1,0 +1,4 @@
+all:
+	javac ImageResizer.java
+clean:
+	rm *.class

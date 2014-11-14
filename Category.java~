@@ -1,0 +1,50 @@
+public class Category {
+    private final String baseFolder = Config.BASE_FOLDER;
+    
+    private int mdpi;
+    private int hdpi;
+    private int xhdpi;
+    private int xxhdpi;
+    private int xxxhdpi;
+    private Config.Type type;
+    private String folder;
+
+    public Category(int mdpi, int hdpi, int xhdpi, int xxhdpi, int xxxhdpi, Config.Type type, String folder) {
+	this.mdpi = mdpi;
+	this.hdpi = hdpi;
+	this.xhdpi = xhdpi;
+	this.xxhdpi = xxhdpi;
+	this.xxxhdpi = xxhdpi;
+	this.type = type;
+	this.folder = baseFolder + folder;
+    }
+
+
+    public int getMdpi() {
+	return mdpi;
+    }
+
+    public int getHdpi() {
+	return hdpi;
+    }
+
+    public int getXhdpi() {
+	return xhdpi;
+    }
+
+    public int getXxhdpi() {
+	return xxhdpi;
+    }
+
+    public int getXxxhdpi() {
+	return xxxhdpi;
+    }
+
+    public Config.Type getType() {
+	return type;
+    }
+
+    public String getFolder() {
+	return folder;
+    }
+}
